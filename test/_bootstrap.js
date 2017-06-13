@@ -12,6 +12,7 @@ global.ROOT_PATH = path.resolve(__dirname, '../');
 global.chai = chai;
 global.sinon = sinon;
 global.expect = chai.expect;
+process.env.SETTINGS = 'faker';
 
 chai.use(sinonChai);
 chai.use(dirtyChai);
