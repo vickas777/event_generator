@@ -1,6 +1,6 @@
 'use strict';
 const utils = require('./utils');
-const createDateAsUTC = utils.createDateAsUTC;
+
 /**
  * Work events generator
  * @param workPeriod {Object} - work events period
@@ -29,7 +29,7 @@ module.exports = function (workPeriod, empHolidays, bankHolidays) {
       workDays.push(dateKey);
     }
     
-    i = i + 1000 * 60 * 60 * 24;
+    i += 1000 * 60 * 60 * 24;
   }
   
   return workDays;
