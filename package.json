@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "istanbul cover _mocha",
+    "simple": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vickas777/event_generator.git"
   },
   "dependencies": {
     "async": "^2.4.1",
@@ -18,5 +23,14 @@
     "serve-favicon": "~2.4.2"
   },
   "author": "vickas777@gmail.com <Bohdan Keller>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "chai-datetime": "^1.4.1",
+    "dirty-chai": "^2.0.0",
+    "faker": "^4.1.0",
+    "istanbul": "^0.4.5",
+    "sinon": "^2.3.4",
+    "sinon-chai": "^2.11.0"
+  }
 }
