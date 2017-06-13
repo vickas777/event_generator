@@ -8,7 +8,7 @@ COPY server /app/server
 
 ENV SETTINGS /var/settings/settings.js
 
-RUN cd /app && npm install
+RUN cd /app && npm install --production
 
 EXPOSE 8050
 
